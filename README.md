@@ -1,19 +1,48 @@
 # VISUALGV — Creative Technology Studio
 
-A starter corporate landing page built with Astro, styled after a New York
-skyscraper architecture firm: monochrome, serif-led, grid-based, and minimal.
+A corporate landing page for a New York creative technology studio, with an
+Astro version and a Next.js App Router version running on vinext. The design is
+dark, serif-led, grid-based, and finished with bright green accents.
 
 ## Run locally
 
+Install dependencies:
+
+```sh
 npm install
+```
+
+Run the Astro version:
+
+```sh
 npm run dev
+```
+
+Run the vinext version on http://localhost:8787:
+
+```sh
+npm run dev:vinext
+```
+
+The vinext setup is already initialized in this repository. `npx vinext init`
+is only needed again when setting it up in a fresh project.
 
 ## Build for production
 
-npm run build
+Build the Astro version:
 
-Output is in dist/ — upload this directory to Cloudflare, or connect the
-repo for automatic Git deploys.
+```sh
+npm run build
+```
+
+Build the vinext version:
+
+```sh
+npm run build:vinext
+```
+
+The Astro output is in `dist/` — upload this directory to Cloudflare, or
+connect the repo for automatic Git deploys.
 
 ## Deploy to Cloudflare
 
